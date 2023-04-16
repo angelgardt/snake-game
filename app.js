@@ -7,8 +7,8 @@ function drawGameField() {
     if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
         
-        canvas.width = 16*16;
-        canvas.height = 16*16;
+        canvas.width = CELL_SIZE*GAME_BOARD_SIZE;
+        canvas.height = CELL_SIZE*GAME_BOARD_SIZE;
 
         for (let i=0; i<GAME_BOARD_SIZE; i++) {
             for (let j=0; j<GAME_BOARD_SIZE; j++) {
@@ -23,4 +23,3 @@ function drawGameField() {
         }
     }
 }
-
